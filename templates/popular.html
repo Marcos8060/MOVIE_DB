@@ -1,11 +1,23 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="hero_section">
+  <img class="img-fluid" src="https://cdn.pixabay.com/photo/2020/06/03/03/58/spider-5253354_960_720.jpg" alt="">
+</div>
 
-  {% for popular_movie in popular %}
-
-    <img src="https://image.tmdb.org/t/p/w500{{popular_movie.poster_path}}" alt="">
-
-  {% endfor %}
+    <div class="container-fluid">
+      <div class="row movies">
+        <h1 class="text-center">Popular Movies</h1>
+        {% for popular_movie in popular %}
+            <div class="col-md-3">
+             <img class="img-fluid mt-3" src="https://image.tmdb.org/t/p/w500{{popular_movie.poster_path}}" alt="">
+             <div class="rating">
+                <small>{{ popular_movie.title }}</small>
+                <small>Rating: <strong>{{ popular_movie.vote_average}}</strong></small>
+              </div>
+            </div>
+        {% endfor %}
+          </div>
+    </div>    
 
 {% endblock %}

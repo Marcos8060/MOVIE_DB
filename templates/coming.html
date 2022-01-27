@@ -1,8 +1,23 @@
 {% extends 'base.html' %}
 
 {% block content %}
-   {% for coming in upcoming %}
-      <img src="https://image.tmdb.org/t/p/w500{{coming.poster_path}}" alt="">
-      <p>{{ coming.title }}</p>
-   {% endfor %}
+<div class="hero_section">
+  <img class="img-fluid" src="https://cdn.pixabay.com/photo/2016/11/15/07/09/photo-manipulation-1825450_960_720.jpg" alt="">
+</div>
+
+    <div class="container-fluid">
+      <div class="row movies">
+        <h1 class="text-center">Upcoming Movies</h1>
+        {% for coming in upcoming %}
+            <div class="col-md-3">
+             <img class="img-fluid mt-3" src="https://image.tmdb.org/t/p/w500{{coming.poster_path}}" alt="">
+             <div class="rating">
+                <small>{{ coming.title }}</small>
+                <small>Rating: <strong>{{ coming.vote_average}}</strong></small>
+              </div>
+            </div>
+        {% endfor %}
+          </div>
+    </div>    
+
 {% endblock %}
