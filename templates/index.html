@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="hero_section">
-  <img class="img-fluid" src="https://demo.themezy.com/system/resources/demo_themes/000/000/010//dummy/slide-2.jpg" alt="">
+  <img class="img-fluid" src="https://cdn.pixabay.com/photo/2019/04/14/14/09/fantasy-4126847_960_720.jpg" alt="">
 </div>
 
     <div class="container-fluid">
@@ -12,7 +12,9 @@
             <div class="col-md-3">
              <img class="img-fluid mt-3" src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="">
              <div class="rating">
+               <a href="/movie/{{ movie.id }}">
                 <small>{{ movie.title }}</small>
+               </a>
                 <small>Rating: <strong>{{ movie.vote_average}}</strong></small>
               </div>
             </div>
