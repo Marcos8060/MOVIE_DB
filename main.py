@@ -2,7 +2,6 @@ from crypt import methods
 from flask import Flask,render_template
 import requests
 import json
-from .request import get_movie
 
 app = Flask(__name__)
 
