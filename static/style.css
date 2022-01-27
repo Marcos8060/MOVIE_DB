@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:wght@200;400&display=swap');
 
+a{
+    text-decoration: none;
+    color: #EEEEEE;
+}
 body{
     font-family: 'Poppins', sans-serif;
     /* background: white; */
@@ -36,6 +40,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.details{
+    margin-top: 10vh;
 }
 /* footer */
 footer{

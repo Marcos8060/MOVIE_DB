@@ -4,19 +4,30 @@
 <div class="container">
 
     <!-- Poster background -->
-    <div class="row">
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 posterPath" style="background: url({{movie.poster}}) no-repeat center center">
+    <div class="row details">
+        <div class="col-md-7" style="background: url({{movie.poster}}) no-repeat center center">
         </div>
-
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 movie-details">
+        <div class="col-md-5">
             <h3>{{ movie.title }}</h3>
-
             <p class="overview"> {{ movie.overview }}</p>
             <p class="ratings"> <b> {{ movie.vote_average }}</b> - <i>{{ movie.vote_count}} votes </i> </p>
-
-
+            <p>Release date: {{ movie.release_date }}</p>
         </div>
     </div>
-
 </div>
+
+<footer>
+    <div class="row container">
+      <div class="col-md-4 text-center pt-5 pb-5">
+        <p>TMDB</p>
+      </div>
+      <div class="col-md-4 text-center pt-5 pb-5">
+        <p>©CopyRight All Rights Reserved</p>
+      </div>
+      <div class="col-md-4 text-center pt-5 pb-5">
+        <p>Made with love by Marcos Ochieng</p>
+      </div>
+    </div>
+  </footer>
+
 {% endblock %}

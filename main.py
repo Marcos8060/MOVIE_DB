@@ -9,13 +9,14 @@ app = Flask(__name__)
 
 class Movie:
 
-    def __init__(self,id,title,overview,poster,vote_average,vote_count):
+    def __init__(self,id,title,overview,poster,vote_average,vote_count,release_date):
         self.id =id
         self.title = title
         self.overview = overview
         self.poster = 'https://image.tmdb.org/t/p/w500/'+ poster
         self.vote_average = vote_average
         self.vote_count = vote_count
+        self.release_date = release_date
 
 
 
@@ -37,8 +38,9 @@ def get_movie(id):
             poster = movie_details_response.get('poster_path')
             vote_average = movie_details_response.get('vote_average')
             vote_count = movie_details_response.get('vote_count')
+            release_date = movie_details_response.get('release_date')
 
-            movie_object = Movie(id,title,overview,poster,vote_average,vote_count)
+            movie_object = Movie(id,title,overview,poster,vote_average,vote_count,release_date)
 
     return movie_object
 
