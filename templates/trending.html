@@ -1,10 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  {% for trending in trendings %}
-     <ul>
-         <li>{{ trending }}</li>
-     </ul>
-     <img src="https://image.tmdb.org/t/p/w500{{ trending.poster_path }}" alt="">
-  {% endfor %}
+<div class="hero_section">
+  <img class="img-fluid" src="https://demo.themezy.com/system/resources/demo_themes/000/000/010//dummy/slide-1.jpg" alt="">
+</div>
+
+    <div class="container-fluid">
+      <div class="row movies">
+        {% for trending in trendings %}
+            <div class="col-md-3">
+             <img class="img-fluid mt-3" src="https://image.tmdb.org/t/p/w500{{trending.poster_path}}" alt="">
+             <div class="rating">
+                <small>{{ trending.title }}</small>
+                <small>Rating: <strong>{{ trending.vote_average}}</strong></small>
+              </div>
+            </div>
+        {% endfor %}
+          </div>
+    </div>    
+
 {% endblock %}
