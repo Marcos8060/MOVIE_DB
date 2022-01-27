@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% for trending in trendings %}
+     <ul>
+         <li>{{ trending }}</li>
+     </ul>
+     <img src="https://image.tmdb.org/t/p/w500{{ trending.poster_path }}" alt="">
+  {% endfor %}
+{% endblock %}

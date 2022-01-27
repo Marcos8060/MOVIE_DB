@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  {% for popular_movie in popular %}
+
+    <img src="https://image.tmdb.org/t/p/w500{{popular_movie.poster_path}}" alt="">
+
+  {% endfor %}
+
+{% endblock %}

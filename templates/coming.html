@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   {% for coming in upcoming %}
+      <img src="https://image.tmdb.org/t/p/w500{{coming.poster_path}}" alt="">
+      <p>{{ coming.title }}</p>
+   {% endfor %}
+{% endblock %}

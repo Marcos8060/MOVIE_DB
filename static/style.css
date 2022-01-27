@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:wght@200;400&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #EFF3F4;
+}
+.navbar{
+    height: 80px;
+    background: #262626;
+}
+.navbar-brand{
+    color: #7AA42E;
+    font-weight: bold;
+    font-size: 25px;
+}
+.navbar-brand:hover{
+    color: #EEEEEE;
+}
+.nav-link{
+    color: white;
+}
+.hero_section{
+    background: #161819;
+    height: 90vh;
+}
+.hero_section > div >  div > h1{
+    color: #EEEEEE;
+    font-weight: 800;
+}
+.hero_section > div > div > p{
+    color: #EEEEEE;
+}
+.btn{
+    background: #7AA42E;
+    outline: 0;
+    color: #EEEEEE;
+    height: 50px;
+    border-radius: 30px;
+}
+.btn:hover{
+    color: #EEEEEE;
+}
