@@ -12,7 +12,9 @@
             <div class="col-md-3">
              <img class="img-fluid mt-3" src="https://image.tmdb.org/t/p/w500{{popular_movie.poster_path}}" alt="">
              <div class="rating">
+               <a href="/movie/{{popular_movie.id}}">
                 <small>{{ popular_movie.title }}</small>
+               </a>
                 <small>Rating: <strong>{{ popular_movie.vote_average}}</strong></small>
               </div>
             </div>
