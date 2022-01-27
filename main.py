@@ -13,6 +13,12 @@ def home_page():
     data = requests.get(BASE_URL).json()['results']
     return render_template('index.html', movies= data)
 
+@app.route('/movie/<int:id>')
+def movie_page(id):
+    movie = get_movie(id)
+    title = f'movie.title'
+    return render_template('movie.html', title= title, movie =movie)
+
 
 @app.route('/trending', methods= ['GET'])
 def trending_page():
