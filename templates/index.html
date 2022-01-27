@@ -7,8 +7,9 @@
 
     <div class="container-fluid">
       <div class="row movies">
+      <h1 class="text-center">Top Rated</h1>
         {% for movie in movies %}
-            <div class="col-md-2">
+            <div class="col-md-3">
              <img class="img-fluid mt-3" src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="">
              <div class="rating">
                 <small>{{ movie.title }}</small>
