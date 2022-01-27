@@ -37,7 +37,9 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-/* footer */footer{
+/* footer */
+footer{
+    margin-top: 5vh;
     background: #161819;
     color: #EEEEEE;
 }
