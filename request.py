@@ -1,5 +1,8 @@
 import urllib.request,json
 from .main import app
+from .models import movie
+
+Movie = movie.Movie
 
 
 # getting api key
