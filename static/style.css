@@ -23,12 +23,9 @@ body{
     background: #161819;
     height: 90vh;
 }
-.hero_section > div >  div > h1{
-    color: #EEEEEE;
-    font-weight: 800;
-}
-.hero_section > div > div > p{
-    color: #EEEEEE;
+.hero_section > img{
+    height: 100vh;
+    width: 100%;
 }
 .btn{
     background: #7AA42E;
