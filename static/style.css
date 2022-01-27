@@ -40,3 +40,7 @@ body{
 .btn:hover{
     color: #EEEEEE;
 }
+/* footer */footer{
+    background: #161819;
+    color: #EEEEEE;
+}
