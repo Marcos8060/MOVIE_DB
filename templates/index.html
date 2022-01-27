@@ -1,16 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="hero_section">
+  <img class="img-fluid" src="https://demo.themezy.com/system/resources/demo_themes/000/000/010//dummy/slide-2.jpg" alt="">
+</div>
 
-  <h1>Top Rated</h1>
-
-     <div class="row mt-5">
-   {% for movie in movies %}
-       <div class="col-md-2">
-        <img class="img-fluid" src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="">
-        <small>{{ movie.title }}</small>
-       </div>
-   {% endfor %}
-     </div>
+    <div class="container-fluid">
+      <div class="row movies">
+        {% for movie in movies %}
+            <div class="col-md-2">
+             <img class="img-fluid mt-3" src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="">
+             <div class="rating">
+                <small>{{ movie.title }}</small>
+                <small>Rating: <strong>{{ movie.vote_average}}</strong></small>
+              </div>
+            </div>
+        {% endfor %}
+          </div>
+    </div>    
 
 {% endblock %}

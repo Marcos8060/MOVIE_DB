@@ -27,15 +27,13 @@ body{
     height: 100vh;
     width: 100%;
 }
-.btn{
-    background: #7AA42E;
-    outline: 0;
-    color: #EEEEEE;
-    height: 50px;
-    border-radius: 30px;
+.movies{
+    margin-top: 20vh;
 }
-.btn:hover{
-    color: #EEEEEE;
+.rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 /* footer */footer{
     background: #161819;
